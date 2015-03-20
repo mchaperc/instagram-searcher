@@ -1,0 +1,68 @@
+body {
+	padding-top: 6em;
+	background-image: url('http://www.paperhi.com/download/view?resolution=&file=MjU2MHgxNDQwLzIwMTMwMzE0L2Rhd24gZmlsdGVyIGJva2VoIHBob3RvZ3JhcGhlcnMgZ3JhZGllbnQgY29sb3JzIG91dCBvZiBmb2N1cyBzb2Z0IGxpZ2h0IGluc3RhZ3JhbSAyNTYweDE0NDAgd2FsbHBfd3d3LnBhcGVyaGkuY29tXzU2LmpwZw==&name=ZGF3bl9maWx0ZXJfYm9rZWhfcGhvdG9ncmFwaGVyc19ncmFkaWVudF9jb2xvcnNfb3V0X29mX2ZvY3VzX3NvZnRfbGlnaHRfaW5zdGFncmFtXzI1NjB4MTQ0MF93YWxscA==') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.title img {
+	border-radius: 10px;
+	border: 1px solid black;
+	box-shadow: 0 0 5px black;
+}
+
+.title, .search-field {
+	position: relative;
+	text-align: center;
+}
+
+.search-field {
+	top: 1em;
+	background-color: rgba(255, 255, 255, .7);
+	width: 100%;
+	margin: 0 auto;
+	padding: 1em;
+}
+
+input {
+	font-size: 1.3em;
+}
+
+input[type="text"] {
+	width: 10em;
+	padding: .1em;
+}
+
+input[type="submit"] {
+	box-shadow: 2px 2px 5px black;
+	margin-left: 10px;
+	border-radius: 0;
+}
+
+.loading {
+	position: relative;
+	text-align: center;
+	top: 3em;
+}
+
+.results {
+	position: relative;
+	top: 3em;
+	margin: 0 auto;
+	display: inline;
+	padding-left: 4.5em;
+}
+
+img {
+	margin: 10px;
+	border-radius: 10px;
+	max-height: 300px;
+	max-width: 300px;
+	display: inline;
+}
+
+img:hover {
+	box-shadow: 0 0 15px white;
+}
