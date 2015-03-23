@@ -11,18 +11,20 @@
 	<header class="title">
 		<img src="ng-instagram.png" alt="Instagram Searcher Title"/>
 	</header>
-	<section class="search-field">
-		<form ng-submit="submit(searchTerm)">
-			<input ng-model="searchTerm" type="text" placeholder="Enter a tag to search" required autofocus>
-			<input type="submit" value="Submit">
+	<section class="search-field entry form-group">
+		<form ng-submit="submit(searchTerm)" class="input-group col-sm-4 col-sm-offset-4">
+			<input class="form-control" ng-model="searchTerm" type="text" placeholder="Enter a tag to search" required autofocus>
+			<span class="input-group-btn">
+				<input class="btn btn-success" type="submit" value="Submit">
+			</span>
 		</form>
 	</section>
 	<div class="loading" ng-if="loading">
 		<p>Searching Instagram for photos tagged with <span>"{{searchTerm}}"</span></p>
 	</div>
-	<ng-view ng-if="searchSuccess">
+	<ng-view ng-if="searchSuccess" class="container">
 		<div ng-repeat="item in data" class="results">
-			<a href="{{item.link}}"><img ng-src="{{item.images.standard_resolution.url}}"/></a>
+			<a href="{{item.link}}"><img ng-src="{{item.images.standard_resolution.url}}" class="col-lg-4 col-md-3 col-md-offset-2 col-xs-8 col-xs-offset-2"/></a>
 		</div>
 	</ng-view>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>

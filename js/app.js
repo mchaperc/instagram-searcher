@@ -30,8 +30,8 @@ var InstagramSearchCtrl = myModule.controller('InstagramSearchCtrl', function($s
 			$scope.loading = false;
 			$scope.searchSuccess = true;
 		})
-		.error(function() {
-			alert('error');
+		.error(function(error) {
+			alert('error: ' + error);
 		})
 	}
 
